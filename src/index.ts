@@ -46,7 +46,7 @@ const checktStatuses = async () => {
   ) {
     currentPackagesStatuses = { ...newPackagesStatuses }
     const emailContent = Object.entries(newPackagesStatuses)
-      .map(([key, value]) => `${key}: ${value}`)
+      .map(([key, value]) => `- Package ${key} status: ${value}`)
       .join('<br/>')
     sendEmail(emailContent)
   } else {
