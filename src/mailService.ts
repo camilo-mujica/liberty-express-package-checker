@@ -15,7 +15,7 @@ export const sendEmail = async (emailContent: string) => {
     const transporter = nodemailer.createTransport(mailOptions)
     const verifyConnection = await transporter.verify()
     if (verifyConnection) {
-      const send = await transporter.sendMail({
+      await transporter.sendMail({
         from: `${process.env.EMAIL_FROM_NAME} <${process.env.EMAIL_FROM}>`, // sender address
         to: process.env.RECIPIENT_EMAILS?.split(',') || '', // list of receivers
         subject: 'Liberty express package statatus update ✔', // Subject line
@@ -23,7 +23,7 @@ export const sendEmail = async (emailContent: string) => {
         html: `<b>${emailContent}</b>`, // html body
       })
 
-      console.log('Email sent!', { send })
+      console.log('Email sent!')
     }
   } catch (err) {
     console.log('Error while sending email', err)
