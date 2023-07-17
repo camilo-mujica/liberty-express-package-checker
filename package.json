@@ -1,7 +1,7 @@
 {
   "name": "liberty-express-package-checker",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a Node.js application that checks the status of a series of package deliveries from Liberty Express (https://libertyexpress.com/es-ve/). It utilizes Puppeteer for web scraping and email notifications to alert you when there are changes in the package statuses.",
   "main": "src/index.ts",
   "scripts": {
     "dev": "nodemon src/index.ts",
@@ -9,8 +9,8 @@
     "start": "node dist/index.js",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,}\""
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Camilo Mujica",
+  "license": "MIT",
   "dependencies": {
     "@types/nodemailer": "^6.4.8",
     "@types/puppeteer": "^7.0.4",
