@@ -36,6 +36,9 @@ Before running the application, make sure you have the following installed:
    - PACKAGES: Tracking numbers, a comma-separated list of tracking numbers
    - RECIPIENT_EMAILS: Email address to send notifications to, a comma-separated list of email addresses
    - EMAIL_FROM: Email address to send notifications from
+   - EMAIL_FROM_NAME: Email address from name
+   - EMAIL_HOST: Email address host
+   - EMAIL_PORT: Email address port
    - EMAIL_PASSWORD: Email address password
 
 ## Usage
