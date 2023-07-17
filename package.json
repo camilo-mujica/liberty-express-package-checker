@@ -1,0 +1,29 @@
+{
+  "name": "liberty-express-package-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/nodemailer": "^6.4.8",
+    "@types/puppeteer": "^7.0.4",
+    "dotenv": "^16.3.1",
+    "nodemailer": "^6.9.3",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.0",
+    "puppeteer": "^20.8.2",
+    "request": "^2.88.2",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "typescript": "^5.1.6"
+  }
+}
